@@ -1,33 +1,33 @@
 ---
-title: Customize OneDrive for Business sites
-description: The actual patterns that you can use with the add-in model to customize OneDrive for Business sites. 
+title: Customize OneDriv sites
+description: The actual patterns that you can use with the add-in model to customize OneDrive sites. 
 ms.date: 4/25/2018
 localization_priority: Priority
 ---
 
-# Customize OneDrive for Business sites
+# Customize OneDrive sites
 
-OneDrive for Business sites can be customized in Office 365 or with the add-in model in general, based on company requirements. Actual techniques to perform this customization are different than in the on-premises scenario because only add-in model techniques can be used. 
+OneDrive sites can be customized in Microsoft 365 or with the add-in model in general, based on company requirements. Actual techniques to perform this customization are different than in the on-premises scenario because only add-in model techniques can be used. 
 
 > [!IMPORTANT]
-> This applies to **only** the *classic* OneDrive for Business experience in SharePoint Online. If you are using the new default experience, this is not supported. Modern or new experiences of OneDrive for Business do not support custom branding. Tenant administrators can control the default experience from the SharePoint Online administrative settings.
+> This applies to **only** the *classic* OneDrive experience in SharePoint Online. If you are using the new default experience, this is not supported. Modern or new experiences of OneDrive do not support custom branding. Tenant administrators can control the default experience from the SharePoint Online administrative settings.
 > 
 > Patterns for Dedicated and on-premises are identical with the add-in model techniques, but there are differences in the possible technologies that can be used.
 
-## Why customize OneDrive for Business sites?
+## Why customize OneDrive sites?
 
-There are numerous aspects to applying customizations to OneDrive for Business (OD4B) sites. You can customize these sites because they are SharePoint sites, but you should always consider the short-term and long-term impact of the customizations. 
+There are numerous aspects to applying customizations to OneDrive sites. You can customize these sites because they are SharePoint sites, but you should always consider the short-term and long-term impact of the customizations. 
 
-Following are the high-level guidelines for customizing OneDrive for Business sites: 
+Following are the high-level guidelines for customizing OneDrive sites: 
 
-- Apply branding customizations by using Office 365 themes or the SharePoint site theming engine. 
+- Apply branding customizations by using Microsoft 365 themes or the SharePoint site theming engine. 
 
 - If theme engines are not enough, you can adjust some CSS settings by using alternate CSS options.
  
 - Avoid customizing OD4B sites by using custom master pages because this causes you additional long-term costs and challenges with future updates.
  
   - In most cases, you can achieve all common branding scenarios with themes and alternate CSS.
-  - If you choose to use custom master pages, be prepared to apply changes to the sites when major functional updates are applied to Office 365.
+  - If you choose to use custom master pages, be prepared to apply changes to the sites when major functional updates are applied to Microsoft 365.
 
 - You can use JavaScript embedding to modify or hide functionalities from the site.
 
@@ -35,9 +35,9 @@ Following are the high-level guidelines for customizing OneDrive for Business si
 
 - We do not recommend using content types and site columns in OD4B sites. Use OD4B sites for personal unstructured data and documents. Use team sites and collaboration sites for company data and documents, where you can use whatever information management policies and metadata you want.
 
-Customizations are definitely supported in Office 365, and you can keep on using them with OD4B sites. We just want to ensure that you consider the impact of these customizations from an operational and maintenance perspective. This is not really specific for SharePoint, but rather a rule of thumb for any IT solution built with any platform. 
+Customizations are definitely supported in Microsoft 365, and you can keep on using them with OD4B sites. We just want to ensure that you consider the impact of these customizations from an operational and maintenance perspective. This is not really specific for SharePoint, but rather a rule of thumb for any IT solution built with any platform. 
 
-Following is an example of an OD4B site that has been customized using the previous guidelines. In this case, the end result has been achieved with a combination of Office 365 themes, a site theme, and use of the JavaScript embedding pattern.
+Following is an example of an OD4B site that has been customized using the previous guidelines. In this case, the end result has been achieved with a combination of Microsoft 365 themes, a site theme, and use of the JavaScript embedding pattern.
 
 <img alt="A customized OD4B site" src="media/Customization-Options-For-OD4B-Sites/Customization-Options-For-OD4B-Sites-01.png" width="800">
 
@@ -109,7 +109,7 @@ This option relies on the pre-creation of the OD4B sites before users access the
 
 1. Administrator uses the remote creation APIs to create OD4B sites for users and applies the needed customizations to the OD4B sites as part of the script process.
 
-2. Actual OD4B sites are created to Office 365 for specific users and associated to their user profiles.
+2. Actual OD4B sites are created to Microsoft 365 for specific users and associated to their user profiles.
 
 While this is a reliable process, you have to manage new persons and updates manually, which could mean more work than using the hidden app part approach. Nevertheless, this is a valid approach and is especially useful if you are migrating from some other file sharing solution to the OD4B and want to avoid users needing to access the OD4B site one time before actual site creation is started.
 
